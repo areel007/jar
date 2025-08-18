@@ -4,6 +4,57 @@ import { TEAM_MEMBERS } from "@/utils/team_members";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const LOGO = [
+    {
+        src: "/images/BNP.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/Finance.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/FMOHSW.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NAFDAC.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NCDC.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NGF.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NHCF.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NHIA.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NIMR.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NPHCDA.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/NPRD.png",
+        alt: "Jar Logo"
+    },
+    {
+        src: "/images/Senate.png",
+        alt: "Jar Logo"
+    },
+];
+
 export const Team = () => {
     const [containerWidth, setContainerWidth] = useState(0);
     const [columns, setColumns] = useState(4);
@@ -58,7 +109,7 @@ export const Team = () => {
                     gridTemplateColumns: `repeat(${columns}, 1fr)`
                 }}
             >
-                {TEAM_MEMBERS.map((item, i) => <TeamCard key={i} squareSize={squareSize} name={item.name} position={item.position} image={item.image} twitter={item.twitter} facebook={item.facebook} instagram={item.instagram} />)}
+                {LOGO.map((item, i) => <LogoCard key={i} src={item.src} alt={item.alt} squareSize={squareSize} />)}
 
             </div>
         </section>
@@ -74,6 +125,25 @@ type TTeamCardProps = {
     facebook: string;
     instagram: string;
 
+}
+
+type TLogoCardProps = {
+    squareSize: number;
+    src: string;
+    alt: string;
+
+}
+
+const LogoCard = ({ squareSize, src, alt }: TLogoCardProps) => {
+    return <div
+        className="w-full cursor-pointer relative transition-all after:duration-[.8s] group overflow-hidden"
+        style={{
+            height: `${squareSize}px`,
+            aspectRatio: '1/1'
+        }}
+    >
+        <Image src={src} alt={alt} fill={true} className="object-cover absolute inset-0 group-hover:scale-[1.1] transition-all duration-[1s]" />
+    </div>
 }
 
 const TeamCard = ({ squareSize, name, position, image, twitter, facebook, instagram }: TTeamCardProps) => {

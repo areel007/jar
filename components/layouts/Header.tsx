@@ -73,7 +73,7 @@ export const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <Button text="let's talk" className="bg-orange-500 text-white uppercase text-[14px] font-[500] hidden md:block" />
+                        <Button text="let's talk" className="bg-orange-500 text-white uppercase text-[14px] font-[500] hidden md:block" onClick={() => { window.location.href = "https://calendar.app.google/EaSB7KMKzfPncyVT8" }} />
                     </div>
                 </div>
             </header>
