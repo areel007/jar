@@ -41,11 +41,11 @@ export const HomeHero = () => {
                     autoplay={{ delay: 3000 }}
                 >
                     <SwiperSlide>
-                        <Image src="/images/jar.jpg" alt="hero" fill={true} className="object-cover w-full h-full" />
+                        <Image src="/images/HERO-1-min.png" alt="hero" fill={true} className="object-cover w-full h-full" />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src="/images/jar_man_face.jpg" alt="hero" fill={true} className="object-cover w-full h-full" />
+                        <Image src="/images/HERO-2-min.png" alt="hero" fill={true} className="object-cover w-full h-full" />
                     </SwiperSlide>
 
                 </Swiper>
