@@ -33,10 +33,10 @@ export default function Home() {
           </div>
 
           <div className="">
-            <ModuleTitle title="business forum" />
-            <h2 className="text-[30px] md:text-[55px] text-black/80 leading-[1] font-[600] mb-[20px]">Connecting minds, creating future</h2>
+            <ModuleTitle title="BOUND BY THE COMPACT" />
+            <h2 className="text-[30px] md:text-[55px] text-black/80 leading-[1] font-[600] mb-[20px]">The People, Government & Partners</h2>
 
-            <p className="text-[14px] md:text-[16px] leading-[1.4] text-black/50 max-w-[80%] mb-[20px] md:mb-[100px]">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+            <p className="text-[14px] md:text-[16px] leading-[1.4] text-black/50 max-w-[80%] mb-[20px] md:mb-[100px]">Bringing the strength of the Nigerian Health Sector to light</p>
 
             <div className="w-full">
               <Image src="/images/reform-right.png" alt="jar_smile" width={530} height={530} className="object-cover w-full h-auto" />

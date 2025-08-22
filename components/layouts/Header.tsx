@@ -54,10 +54,8 @@ export const Header = () => {
                     <div className="flex items-center gap-[50px]">
                         <Logo />
 
-                        <nav className="hidden md:flex items-center gap-[20px]">
-                            {
-                                MENU.map((item, i) => <NavLink key={i} text={item.text} href={item.href} submenu={item.submenu} />)
-                            }
+                        <nav className="hidden md:flex items-center gap-[20px] text-white">
+                            <a href="/jar-report-2024.pdf" target="_blank" download>Jar Report 2024</a>
                         </nav>
                     </div>
 
@@ -73,7 +71,7 @@ export const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <Button text="let's talk" className="bg-orange-500 text-white uppercase text-[14px] font-[500] hidden md:block" onClick={() => { window.location.href = "https://calendar.app.google/EaSB7KMKzfPncyVT8" }} />
+                        <Button text="save the date" className="bg-orange-500 text-white uppercase text-[14px] font-[500] hidden md:block" onClick={() => { window.location.href = "https://calendar.app.google/EaSB7KMKzfPncyVT8" }} />
                     </div>
                 </div>
             </header>
@@ -82,32 +80,7 @@ export const Header = () => {
             <div className={`fixed top-0 left-0 w-full h-[auto] bg-[#070a17] p-[20px] z-[10] transition-transform duration-[.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
                 <div className="h-[83px]"></div>
                 <nav className="flex flex-col gap-[20px]">
-                    {step === 1 ? <div className="text-white flex flex-col gap-[20px]">
-                        {
-                            MENU.map((item, i) => item.submenu ? <div key={i} className="flex items-center justify-between" onClick={() => _setSubmenu(item.submenu)}>
-                                <span>{item.text}</span>
-                                <span className="cursor-pointer" onClick={() => { setStep(2) }}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                                    </svg>
-                                </span>
-                            </div> : <Link key={i} href={item.href} className="flex items-center justify-between" onClick={() => setIsMobileMenuOpen(false)}>
-                                <span>{item.text}</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                                </svg>
-                            </Link>)
-                        }
-                    </div> : <div className="text-white flex flex-col gap-[20px]">
-                        <div className="flex items-center gap-[10px]" onClick={() => setStep(1)}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-                            </svg>
-                            <span>Back</span>
-                        </div>
-
-                        {_submenu.map((item, i) => <Link key={i} href={item.href} onClick={() => setIsMobileMenuOpen(false)}>{item.text}</Link>)}
-                    </div>}
+                    <a href="/jar-report-2024.pdf" download>Jar Report 2024</a>
                 </nav>
                 <div className="pt-[10px] mt-[20px] border-t border-t-white/30 flex items-center gap-[5px]">
                     <a href="https://x.com" target="_blank">

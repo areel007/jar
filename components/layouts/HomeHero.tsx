@@ -16,10 +16,10 @@ export const HomeHero = () => {
     return (
         // before:absolute before:inset-0 before:bg-[#070a10]/30 before:z-[1]
         <section className="w-full h-[100vh] relative before:absolute before:inset-0 before:bg-[#070a10]/30 before:z-[1]">
-            <div className="flex items-end pb-[100px] h-full relative z-[2]">
+            <div className="flex items-start md:items-end pt-[100px] pb-[100px] h-full relative z-[2]">
                 <div className="w-[90%] max-w-[1810px] mx-auto text-white">
-                    <ModuleTitle title="Innovative business forum" />
-                    <h1 className="text-[60px] md:text-[80px] lg:text-[100px] 2xl:text-[140px] uppercase leading-[1] font-[600] mb-[20px]">Connect <br /> inspire <br /> innovate</h1>
+                    <ModuleTitle title="ALL HANDS. ONE MISSION." />
+                    <h1 className="text-[30px] lg:text-[40px] 2xl:text-[40px] leading-[1.1] font-[600] mb-[20px]">Bringing the <br /> Nigerian Health Sector <br /> to Light</h1>
 
                     <a href="#second_module" className="flex items-center gap-[5px]">
                         <span>Scroll Down</span>

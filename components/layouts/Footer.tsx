@@ -5,7 +5,7 @@ export const Footer = () => {
         <div className="w-[90%] max-w-[1290px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px] md:gap-[60px] xl:gap-[100px] mb-[20px]">
             <Logo />
 
-            <h2 className="text-[22px] md:text-[45px] leading-[1] font-[600] mb-[20px]">Bringing together industry leaders in our forum</h2>
+            <h2 className="text-[22px] md:text-[45px] leading-[1] font-[600] mb-[20px]">Stay in tune for updates</h2>
         </div>
 
         <div className="w-[90%] max-w-[1290px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[60px] xl:gap-[100px] border-b border-white/20 pb-[40px] md:pb-[100px]">
@@ -26,11 +26,6 @@ export const Footer = () => {
                     </svg>
 
                 </div>
-
-                <div className="flex items-center gap-[10px]">
-                    <input type="checkbox" />
-                    <p className="text-white/40">I agree to the <a href="" className="text-white underline">Privacy Policy</a></p>
-                </div>
             </div>
 
             <div className="text-white grid grid-cols-1 md:grid-cols-3 gap-[20px]">
@@ -38,9 +33,10 @@ export const Footer = () => {
                     <span className="text-[16px] md:text-[18px] font-[600] block mb-[20px]">Socials</span>
 
                     <div className="flex flex-col gap-[10px] text-white/50">
-                        <a href="" target="_blank">Twitter</a>
-                        <a href="" target="_blank">Facebook</a>
-                        <a href="" target="_blank">Instagram</a>
+                        <a href="http://x.com/swapgov" target="_blank">Twitter</a>
+                        <a href="https://facebook.com/swapgov" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/swapgov" target="_blank">Instagram</a>
+                        <a href="https://linkedin.com/company/swapgov" target="_blank">LinkedIn</a>
                     </div>
                 </div>
 
@@ -48,20 +44,15 @@ export const Footer = () => {
                     <span className="text-[16px] md:text-[18px] font-[600] block mb-[20px]">Menu</span>
 
                     <div className="flex flex-col gap-[10px] text-white/50">
-                        <a href="" target="_blank">Home</a>
-                        <a href="" target="_blank">About Us</a>
-                        <a href="" target="_blank">Blog</a>
-                        <a href="" target="_blank">Events</a>
-                        <a href="" target="_blank">Shop</a>
-                        <a href="" target="_blank">Contact Us</a>
+                        <a href="/jar-report-2024.pdf" target="_blank" download>Jar Report 2024</a>
                     </div>
                 </div>
 
                 <div className="">
-                    <span className="text-[16px] md:text-[18px] font-[600] block mb-[20px]">Socials</span>
+                    <span className="text-[16px] md:text-[18px] font-[600] block mb-[20px]">Email</span>
 
                     <div className="flex flex-col gap-[10px] text-white/50">
-                        <span>info@example.com</span>
+                        <span>jar@swap.gov.ng</span>
                     </div>
                 </div>
             </div>
