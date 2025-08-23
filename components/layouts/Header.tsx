@@ -79,7 +79,7 @@ export const Header = () => {
             {/* mobile menu */}
             <div className={`fixed top-0 left-0 w-full h-[auto] bg-[#070a17] p-[20px] z-[10] transition-transform duration-[.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
                 <div className="h-[83px]"></div>
-                <nav className="flex flex-col gap-[20px]">
+                <nav className="flex flex-col gap-[20px] text-white">
                     <a href="/jar-report-2024.pdf" download>Jar Report 2024</a>
                 </nav>
                 <div className="pt-[10px] mt-[20px] border-t border-t-white/30 flex items-center gap-[5px]">
