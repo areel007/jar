@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "../blocks/Logo";
-import { MENU } from "@/utils/nav_menu";
-import { NavLink } from "../blocks/Nav.Link";
+// import { MENU } from "@/utils/nav_menu";
+// import { NavLink } from "../blocks/Nav.Link";
 import { Button } from "../blocks/Button";
 import { Cancel, Hamburger, NineDots, Search } from "../blocks/icons";
-import Link from "next/link";
+// import Link from "next/link";
 
 export const Header = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -17,6 +17,10 @@ export const Header = () => {
     const [showDesktopSocials, setShowDesktopSocials] = useState(false);
 
     // console.log(screenHeight);
+
+    console.log(step);
+    console.log(_submenu);
+    console.log(_setSubmenu);
 
 
 
@@ -55,7 +59,7 @@ export const Header = () => {
                         <Logo />
 
                         <nav className="hidden md:flex items-center gap-[20px] text-white">
-                            <a href="/jar-report-2024.pdf" target="_blank" download>Jar Report 2024</a>
+                            <a href="/jar-report-2024.pdf" target="_blank" download className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">Download 2024 JAR Report</a>
                         </nav>
                     </div>
 
@@ -80,7 +84,7 @@ export const Header = () => {
             <div className={`fixed top-0 left-0 w-full h-[auto] bg-[#070a17] p-[20px] z-[10] transition-transform duration-[.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
                 <div className="h-[83px]"></div>
                 <nav className="flex flex-col gap-[20px] text-white">
-                    <a href="/jar-report-2024.pdf" download>Jar Report 2024</a>
+                    <a href="/jar-report-2024.pdf" download>Download 2024 JAR Report</a>
                 </nav>
                 <div className="pt-[10px] mt-[20px] border-t border-t-white/30 flex items-center gap-[5px]">
                     <a href="https://x.com" target="_blank">
