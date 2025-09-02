@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 import { Button } from '../blocks/Button';
 
-export const AboutHero = () => {
+export const ScientificSessionHero = () => {
     return (
         <section className="h-full md:h-[85vh] w-screen relative">
             <div className="w-full h-full hidden md:grid grid-cols-1 md:grid-cols-2 absolute">

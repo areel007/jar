@@ -61,7 +61,7 @@ export const Header = () => {
                         <nav className="hidden md:flex items-center gap-[20px] text-white">
                             <a href="/jar-report-2024.pdf" target="_blank" download className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">Download 2024 JAR Report</a>
 
-                            <a href="/about" className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">About</a>
+                            <a href="/scientific-session" className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">Scientific Session</a>
                         </nav>
 
                     </div>
@@ -88,7 +88,7 @@ export const Header = () => {
                 <div className="h-[83px]"></div>
                 <nav className="flex flex-col gap-[10px] text-white">
                     <a href="/jar-report-2024.pdf" download>Download 2024 JAR Report</a>
-                    <a href="/about">About</a>
+                    <a href="/scientific-session">Scientific Session</a>
                 </nav>
                 <div className="pt-[10px] mt-[20px] border-t border-t-white/30 flex items-center gap-[5px]">
                     <a href="https://x.com" target="_blank">

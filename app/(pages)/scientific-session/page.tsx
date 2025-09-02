@@ -1,14 +1,15 @@
 "use client";
 import Countdown from "@/components/blocks/Countdown";
 import { ModuleTitle } from "@/components/blocks/Module.Title";
-import { AboutHero } from "@/components/layouts/AboutHero";
+import { ScientificSessionHero } from "@/components/layouts/ScientificSessionHero";
 import { HorizontalScrollText } from "@/components/layouts/HorizontalScrollText";
+import { Button } from "@/components/blocks/Button";
 
-export default function About() {
+export default function ScientificSession() {
     return (
         <div>
             {/* hero section */}
-            <AboutHero />
+            <ScientificSessionHero />
 
             {/*  */}
             <section className="w-full py-[40px] md:py-[100px]">
@@ -65,6 +66,54 @@ export default function About() {
                 </div>
             </section>
 
+            {/* about us  */}
+            <section className="relative">
+                <div className="w-full h-full hidden md:grid grid-cols-[1fr_2fr] absolute">
+                    <div className="bg-blue-500 h-full"></div>
+                    <div className="w-full bg-black"></div>
+                </div>
+                <div className="relative py-[40px] md:py-[100px] max-w-[1810px] w-[90%] mx-auto hidden md:grid grid-cols-2 gap-[100px]">
+                    <div className="grid grid-cols-2 gap-[20px]">
+                        <img src="/images/ABSTRACT.png" alt="jar" />
+                        <img src="/images/EXHIBITION.png" alt="jar" />
+                    </div>
+                    <div className="">
+                        <span className="text-white uppercase text-[14px] font-[700] mb-[20px] inline-block">About us</span>
+                        <h2 className="text-[30px] md:text-[50px] leading-[1.1] font-[700] mb-[40px] text-white">Driving progress in educational forums</h2>
+                        <p className="text-zinc-200 leading-[1.8]">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+                        <ul className="text-zinc-200 my-[30px] list-decimal leading-[1.6] ml-[20px]">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Adipiscing elit tempor</li>
+                            <li>Ut enim ad minim </li>
+                        </ul>
+
+                        <Button text="about us" className="bg-blue-500 text-white uppercase" />
+                    </div>
+                </div>
+
+                <div className="block md:hidden">
+                    <div className="p-[20px] bg-blue-500 grid grid-cols-2 gap-[20px]">
+                        <img src="/images/ABSTRACT.png" alt="jar" />
+                        <img src="/images/EXHIBITION.png" alt="jar" />
+                    </div>
+
+                    <div className="p-[40px_20px] bg-black">
+                        <span className="text-white uppercase text-[14px] font-[700] mb-[20px] inline-block">About us</span>
+                        <h2 className="text-[30px] leading-[1.1] font-[700] mb-[20px] text-white">Driving progress in educational forums</h2>
+                        <p className="text-zinc-200 leading-[1.8]">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+                        <ul className="text-zinc-200 my-[20px] list-decimal leading-[1.6] ml-[20px]">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Adipiscing elit tempor</li>
+                            <li>Ut enim ad minim </li>
+                        </ul>
+
+                        <Button text="about us" className="bg-blue-500 text-white uppercase" />
+                    </div>
+                </div>
+            </section>
+
             {/* countdown */}
             <section className="w-full py-[40px] md:py-[100px] bg-gray-800">
                 <div className="max-w-[900px] w-[90%] mx-auto">
@@ -74,6 +123,8 @@ export default function About() {
                     <Countdown targetDate={new Date('2025-12-25')} title="Countdown" />
                 </div>
             </section>
+
+
         </div>
     );
 }
