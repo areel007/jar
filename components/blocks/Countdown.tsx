@@ -112,7 +112,7 @@ export default function Countdown({
         return (
             <div className="flex flex-col items-center justify-center p-8 bg-gradient-to-br from-green-900 to-emerald-800 rounded-3xl shadow-2xl border border-green-600">
                 <div className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300 mb-4 animate-pulse">
-                    🎉 Time's Up! 🎉
+                    🎉 Time&apos;s Up! 🎉
                 </div>
                 <p className="text-xl md:text-2xl text-green-200 text-center">{title} has ended!</p>
             </div>
