@@ -18,9 +18,9 @@ export const Header = () => {
 
     // console.log(screenHeight);
 
-    console.log(step);
-    console.log(_submenu);
-    console.log(_setSubmenu);
+    // console.log(step);
+    // console.log(_submenu);
+    // console.log(_setSubmenu);
 
 
 
@@ -53,14 +53,17 @@ export const Header = () => {
     return (
         <>
             {/* header */}
-            <header className={`fixed w-full top-0 left-0 z-50 py-[23px] transition-bg duration-[.5s] ${scrollPosition > 200 ? 'bg-[#070a10]' : 'bg-transparent'}`}>
+            <header className={`fixed w-full top-0 left-0 z-50 py-[23px] transition-bg duration-[.5s] ${scrollPosition > 100 ? 'bg-[#070a10]' : 'bg-transparent'}`}>
                 <div className="w-[90%] max-w-[1810px] h-full mx-auto flex justify-between items-center">
                     <div className="flex items-center gap-[50px]">
                         <Logo />
 
                         <nav className="hidden md:flex items-center gap-[20px] text-white">
                             <a href="/jar-report-2024.pdf" target="_blank" download className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">Download 2024 JAR Report</a>
+
+                            <a href="/about" className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">About</a>
                         </nav>
+
                     </div>
 
                     <div className="flex items-center gap-[40px]">
@@ -83,8 +86,9 @@ export const Header = () => {
             {/* mobile menu */}
             <div className={`fixed top-0 left-0 w-full h-[auto] bg-[#070a17] p-[20px] z-[10] transition-transform duration-[.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
                 <div className="h-[83px]"></div>
-                <nav className="flex flex-col gap-[20px] text-white">
+                <nav className="flex flex-col gap-[10px] text-white">
                     <a href="/jar-report-2024.pdf" download>Download 2024 JAR Report</a>
+                    <a href="/about">About</a>
                 </nav>
                 <div className="pt-[10px] mt-[20px] border-t border-t-white/30 flex items-center gap-[5px]">
                     <a href="https://x.com" target="_blank">

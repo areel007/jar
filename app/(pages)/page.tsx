@@ -4,7 +4,7 @@ import { ModuleTitle } from "@/components/blocks/Module.Title";
 import { HorizontalScrollText } from "@/components/layouts/HorizontalScrollText";
 import { Team } from "@/components/layouts/Team";
 import { UpcomingForums } from "@/components/layouts/UpcomingForums";
-import Image from "next/image";
+// import Image from "next/image";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -29,7 +29,7 @@ export default function Home() {
       <section className="py-[100px] bg-white">
         <div className="w-[90%] max-w-[1290px] mx-auto grid grid-cols-1 lg:grid-cols-[530px_1fr] gap-[50px] lg:gap-[100px]">
           <div className="w-full">
-            <Image src="/images/reform-left.png" alt="jar_smile" width={530} height={530} className="object-cover w-full h-auto" />
+            <img src="/images/reform-left.png" alt="jar_smile" width={530} height={530} className="object-cover w-full h-auto" />
           </div>
 
           <div className="">
@@ -39,7 +39,7 @@ export default function Home() {
             <p className="text-[14px] md:text-[16px] leading-[1.4] text-black/50 max-w-[80%] mb-[20px] md:mb-[100px]">Bringing the strength of the Nigerian Health Sector to light</p>
 
             <div className="w-full">
-              <Image src="/images/reform-right.png" alt="jar_smile" width={530} height={530} className="object-cover w-full h-auto" />
+              <img src="/images/reform-right.png" alt="jar_smile" width={530} height={530} className="object-cover w-full h-auto" />
             </div>
           </div>
         </div>

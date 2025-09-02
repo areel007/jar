@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #0021a5;
+        stroke-linejoin: round;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="433.15 394.41 433.15 500 368.28 500 368.28 394.41"/>
+  <polyline class="cls-1" points="287.44 394.41 287.44 500 222.56 500 222.56 394.41"/>
+  <polyline class="cls-1" points="141.72 394.41 141.72 500 76.85 500 76.85 394.41"/>
+  <g>
+    <g>
+      <g>
+        <path class="cls-2" d="M275.14,134.55c11.99-16.04,31.13-26.42,52.7-26.42h0c21.57,0,40.71,10.39,52.71,26.43"/>
+        <circle class="cls-1" cx="327.84" cy="52.58" r="42.58"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M129.45,134.56c11.99-16.04,31.13-26.43,52.71-26.43h0c21.56,0,40.7,10.38,52.69,26.41"/>
+        <circle class="cls-1" cx="182.16" cy="52.58" r="42.58"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path class="cls-1" d="M334.96,394.41v-101.04c0-36.32,29.44-65.76,65.76-65.76h0c36.32,0,65.76,29.44,65.76,65.76v101.04h-131.51Z"/>
+        <circle class="cls-1" cx="400.72" cy="172.07" r="42.58"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M43.53,394.41v-101.04c0-36.32,29.44-65.76,65.75-65.76h0c36.31,0,65.75,29.44,65.75,65.76v101.04H43.53Z"/>
+        <circle class="cls-1" cx="109.28" cy="172.07" r="42.58"/>
+      </g>
+      <g>
+        <circle class="cls-1" cx="255" cy="172.07" r="42.58" transform="translate(44.31 396.21) rotate(-80.78)"/>
+        <path class="cls-1" d="M189.24,394.41v-101.04c0-36.32,29.44-65.76,65.76-65.76h0c36.32,0,65.76,29.44,65.76,65.76v101.04h-131.51Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

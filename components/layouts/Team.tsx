@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const LOGO = [
@@ -141,7 +141,7 @@ const LogoCard = ({ squareSize, src, alt }: TLogoCardProps) => {
             aspectRatio: '1/1'
         }}
     >
-        <Image src={src} alt={alt} fill={true} className="object-cover absolute inset-0 group-hover:scale-[1.1] transition-all duration-[1s]" />
+        <img src={src} alt={alt} className="w-full object-cover absolute inset-0 group-hover:scale-[1.1] transition-all duration-[1s]" />
     </div>
 }
 

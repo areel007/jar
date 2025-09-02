@@ -5,7 +5,7 @@ import { A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 
-import Image from "next/image";
+// import Image from "next/image";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -41,11 +41,11 @@ export const HomeHero = () => {
                     autoplay={{ delay: 3000 }}
                 >
                     <SwiperSlide>
-                        <Image src="/images/HERO-1-min.png" alt="hero" fill={true} className="object-cover w-full h-full" />
+                        <img src="/images/HERO-1-min.png" alt="hero" className="object-cover w-full h-full" />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src="/images/HERO-2-min.png" alt="hero" fill={true} className="object-cover w-full h-full" />
+                        <img src="/images/HERO-2-min.png" alt="hero" className="object-cover w-full h-full" />
                     </SwiperSlide>
 
                 </Swiper>
