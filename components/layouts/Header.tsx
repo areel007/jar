@@ -6,6 +6,7 @@ import { Logo } from "../blocks/Logo";
 // import { NavLink } from "../blocks/Nav.Link";
 import { Button } from "../blocks/Button";
 import { Cancel, Hamburger, NineDots, Search } from "../blocks/icons";
+import { usePathname } from "next/navigation";
 // import Link from "next/link";
 
 export const Header = () => {
@@ -21,6 +22,9 @@ export const Header = () => {
     // console.log(step);
     // console.log(_submenu);
     // console.log(_setSubmenu);
+
+    // pathname
+    const pathname = usePathname();
 
 
 
@@ -61,7 +65,7 @@ export const Header = () => {
                         <nav className="hidden md:flex items-center gap-[20px] text-white">
                             <a href="/jar-report-2024.pdf" target="_blank" download className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">Download 2024 JAR Report</a>
 
-                            <a href="/scientific-session" className="relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s]">Scientific Session</a>
+                            <a href="/scientific-session" className={`relative before:absolute before:top-[110%] before:bg-white before:content-[''] before:h-[2px] before:w-0 hover:before:w-full before:transition-w before:duration-[.3s] ${pathname === "/scientific-session" && "before:w-full"}`}>Scientific Session</a>
                         </nav>
 
                     </div>

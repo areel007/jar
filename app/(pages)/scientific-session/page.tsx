@@ -14,48 +14,56 @@ export default function ScientificSession() {
             {/*  */}
             <section className="w-full py-[40px] md:py-[100px]">
                 <div className="w-[90%] max-w-[1290px] mx-auto">
-                    <ModuleTitle title="lorem ipsum" className="text-black font-[700] text-[20px] md:text-[30px] mb-[20px]" />
-                    <p className="text-[14px] md:text-[16px] leading-[1.6] max-w-[950px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque, laudantium hic rerum cupiditate nobis quibusdam veniam minus ab expedita consequuntur! Accusamus quas eveniet soluta iure aliquid repellat porro expedita perspiciatis. Quo libero nostrum veritatis aliquam ab alias vitae? Necessitatibus rem, illo fugiat ab consequuntur voluptates tempore facilis eius fugit.</p>
+                    <ModuleTitle title="focus areas" className="text-black font-[700] text-[20px] md:text-[30px] mb-[20px]" />
+                    <p className="text-[14px] md:text-[16px] leading-[1.6] max-w-[950px]">
+                        As part of the 2025 Joint Annual Review (JAR) scheduled for November 3 - 7, 2025, we invite researchers, policymakers, implementing and development partners to submit abstracts for our Scientific Session on health‐system resilience. This scientific session will convene on November 5, 2025, in Abuja, Nigeria, providing a vibrant forum to share evidence, innovations, and scalable models that advance equitable, sustainable care across states and local government areas.
+                    </p>
 
                     <div className="mt-[40px] grid grid-cols-1 gap-[20px] md:gap-[40px]">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[100px]">
                             <div className="">
-                                <h2 className="text-[24px] md:text-[42px] font-[700] leading-[1.1]">Annual education conference 2025</h2>
-                                <p>Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                                <h2 className="text-[24px] md:text-[42px] font-[700] leading-[1.1]">
+                                    Joint Annual Review
+                                    Scientific Conference
+                                    2025
+                                </h2>
+                                <p>
+                                    We welcome abstracts that address at least one of the following subthemes:
+                                </p>
                             </div>
 
                             <div className="grid grid-cols-2 gap-[20px] md:gap-[100px]">
                                 <div className="flex flex-col items-center gap-[10px]">
-                                    <img src="/icons/DASHBOARD.svg" alt="jar" className="w-[100px]" />
-                                    <span className="block font-[600] text-[16px] md:text-[20px]">Dashboard</span>
+                                    <img src="/icons/DASHBOARD.svg" alt="jar" className="w-[70px] md:w-[100px]" />
+                                    <span className="block font-[600] text-[16px] md:text-[20px] text-center">Adaptive Systems and Governance</span>
                                 </div>
 
                                 <div className="flex flex-col items-center gap-[10px]">
-                                    <img src="/icons/COMMUNITY.svg" alt="jar" className="w-[100px]" />
-                                    <span className="block font-[600] text-[16px] md:text-[20px]">Community</span>
+                                    <img src="/icons/COMMUNITY.svg" alt="jar" className="w-[70px] md:w-[100px]" />
+                                    <span className="block font-[600] text-[16px] md:text-[20px] text-center">Community Engagement and Equity</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-[20px] md:gap-[100px]">
                             <div className="flex flex-col items-center gap-[10px]">
-                                <img src="/icons/DIGITAL.svg" alt="jar" className="w-[100px]" />
-                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Digital</span>
+                                <img src="/icons/DIGITAL.svg" alt="jar" className="w-[70px] md:w-[100px]" />
+                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Technological Innovations</span>
                             </div>
 
                             <div className="flex flex-col items-center gap-[10px]">
-                                <img src="/icons/EMERGENCY.svg" alt="jar" className="w-[100px]" />
-                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Emergency</span>
+                                <img src="/icons/EMERGENCY.svg" alt="jar" className="w-[70px] md:w-[100px]" />
+                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Emergency Preparedness and Response</span>
                             </div>
 
                             <div className="flex flex-col items-center gap-[10px]">
-                                <img src="/icons/FINANCE.svg" alt="jar" className="w-[100px]" />
-                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Finance</span>
+                                <img src="/icons/FINANCE.svg" alt="jar" className="w-[70px] md:w-[100px]" />
+                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Sustainable Financing Mechanisms</span>
                             </div>
 
                             <div className="flex flex-col items-center gap-[10px]">
-                                <img src="/icons/HRH.svg" alt="jar" className="w-[100px]" />
-                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">HRH</span>
+                                <img src="/icons/HRH.svg" alt="jar" className="w-[70px] md:w-[100px]" />
+                                <span className="block font-[600] text-[16px] md:text-[20px] text-center">Workforce Resilience</span>
                             </div>
                         </div>
                     </div>
@@ -78,17 +86,44 @@ export default function ScientificSession() {
                         <img src="/images/EXHIBITION.png" alt="jar" />
                     </div>
                     <div className="">
-                        <span className="text-white uppercase text-[14px] font-[700] mb-[20px] inline-block">About us</span>
-                        <h2 className="text-[30px] md:text-[50px] leading-[1.1] font-[700] mb-[40px] text-white">Driving progress in educational forums</h2>
-                        <p className="text-zinc-200 leading-[1.8]">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                        <span className="text-white uppercase text-[14px] font-[700] mb-[20px] inline-block">Submission Guidelines</span>
+                        {/* <h2 className="text-[30px] md:text-[50px] leading-[1.1] font-[700] mb-[40px] text-white">Driving progress in educational forums</h2> */}
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Abstracts must be original, unpublished work of no more than 500 words, structured under:
+                        </p>
 
-                        <ul className="text-zinc-200 my-[30px] list-decimal leading-[1.6] ml-[20px]">
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Adipiscing elit tempor</li>
-                            <li>Ut enim ad minim </li>
+                        <ul className="text-zinc-200 mb-[10px] list-decimal leading-[1.6] ml-[40px]">
+                            <li>Background & Rationale</li>
+                            <li>Aim & Objectives</li>
+                            <li>Methods </li>
+                            <li>Key Findings (preliminary or expected)</li>
+                            <li>Conclusion & Implications</li>
                         </ul>
 
-                        <Button text="about us" className="bg-blue-500 text-white uppercase" />
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Include up to 5 keywords aligned with session subthemes.
+                        </p>
+
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Use Times New Roman, 12-point font, single spacing.
+                        </p>
+
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Title should be bold and 14-point, followed by author names and affiliations.
+                        </p>
+
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Indicate preferred presentation format (Oral side event or Poster).
+                        </p>
+
+                        <div className="h-[40px]" aria-hidden></div>
+
+                        <Button text="Start" className="bg-blue-500 text-white uppercase" />
                     </div>
                 </div>
 
