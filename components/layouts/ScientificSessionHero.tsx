@@ -10,6 +10,13 @@ import 'swiper/css/effect-fade';
 import { Button } from '../blocks/Button';
 
 export const ScientificSessionHero = () => {
+    const handleApply = () => {
+        const href = "https://form.veridianarc.com/callforabstracts";
+        window.location.href = "https://form.veridianarc.com/callforabstract"
+
+    }
+
+
     return (
         <section className="h-full md:h-[85vh] w-screen relative">
             <div className="w-full h-full hidden md:grid grid-cols-1 md:grid-cols-2 absolute">
@@ -49,7 +56,7 @@ export const ScientificSessionHero = () => {
                 <div className="w-full h-full flex flex-col justify-end items-start pb-[70px]">
                     <h1 className="text-[64px] 2xl:text-[98px] leading-[1.1] font-[600] mb-[40px] text-white">Bringing Evidence <br /> and Research <br /> to Light</h1>
 
-                    <Button text='Apply' className='bg-orange-500 text-white' />
+                    <Button text='The application - Scientific Conference' className='bg-orange-500 text-white' onClick={handleApply} />
                 </div>
 
 
@@ -84,7 +91,7 @@ export const ScientificSessionHero = () => {
                     <div className="w-full p-[20px_5px]">
                         <h1 className="text-[34px] leading-[1.1] font-[600] mb-[20px] text-white">Bringing Evidence and Research to Light</h1>
 
-                        <Button text='Apply' className='bg-orange-500 text-white' />
+                        <Button text='The application - Scientific Conference' className='bg-orange-500 text-white w-full' onClick={handleApply} />
                     </div>
                 </div>
 
