@@ -6,6 +6,12 @@ import { HorizontalScrollText } from "@/components/layouts/HorizontalScrollText"
 import { Button } from "@/components/blocks/Button";
 
 export default function ScientificSession() {
+    const handleSubmitAbstract = () => {
+        const href = "https://form.veridianarc.com/callforabstracts";
+        window.location.href = "https://form.veridianarc.com/callforabstract"
+
+    }
+
     return (
         <div>
             {/* hero section */}
@@ -123,7 +129,7 @@ export default function ScientificSession() {
 
                         <div className="h-[40px]" aria-hidden></div>
 
-                        <Button text="Start" className="bg-blue-500 text-white uppercase" />
+                        <Button text="Submit Abstract" className="bg-blue-500 text-white capitalize" onClick={handleSubmitAbstract} />
                     </div>
                 </div>
 
@@ -134,17 +140,44 @@ export default function ScientificSession() {
                     </div>
 
                     <div className="p-[40px_20px] bg-black">
-                        <span className="text-white uppercase text-[14px] font-[700] mb-[20px] inline-block">About us</span>
-                        <h2 className="text-[30px] leading-[1.1] font-[700] mb-[20px] text-white">Driving progress in educational forums</h2>
-                        <p className="text-zinc-200 leading-[1.8]">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                        <span className="text-white uppercase text-[14px] font-[700] mb-[20px] inline-block">Submission Guidelines</span>
+                        {/* <h2 className="text-[30px] leading-[1.1] font-[700] mb-[20px] text-white">Driving progress in educational forums</h2> */}
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Abstracts must be original, unpublished work of no more than 500 words, structured under:
+                        </p>
 
-                        <ul className="text-zinc-200 my-[20px] list-decimal leading-[1.6] ml-[20px]">
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Adipiscing elit tempor</li>
-                            <li>Ut enim ad minim </li>
+                        <ul className="text-zinc-200 mb-[10px] list-decimal leading-[1.6] ml-[40px]">
+                            <li>Background & Rationale</li>
+                            <li>Aim & Objectives</li>
+                            <li>Methods </li>
+                            <li>Key Findings (preliminary or expected)</li>
+                            <li>Conclusion & Implications</li>
                         </ul>
 
-                        <Button text="about us" className="bg-blue-500 text-white uppercase" />
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Include up to 5 keywords aligned with session subthemes.
+                        </p>
+
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Use Times New Roman, 12-point font, single spacing.
+                        </p>
+
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Title should be bold and 14-point, followed by author names and affiliations.
+                        </p>
+
+                        <p className="text-zinc-200 leading-[1.8]">
+                            <span className="mr-[5px]">&bull;</span>
+                            Indicate preferred presentation format (Oral side event or Poster).
+                        </p>
+
+                        <div className="h-[40px]" aria-hidden></div>
+
+                        <Button text="Submit Abstract" className="bg-blue-500 text-white capitalize" onClick={handleSubmitAbstract} />
                     </div>
                 </div>
             </section>
@@ -155,7 +188,7 @@ export default function ScientificSession() {
                     <p className="text-center uppercase text-white">Join Us</p>
                     <p className="font-[700] text-white text-center text-[24px] md:text-[50px] leading-[1.1] mb-[20px] md:mb-[40px]">Our conference starts in</p>
 
-                    <Countdown targetDate={new Date('2025-12-25')} title="Countdown" />
+                    <Countdown targetDate={new Date('2025-11-03')} title="Countdown" />
                 </div>
             </section>
 

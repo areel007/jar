@@ -56,7 +56,7 @@ export const ScientificSessionHero = () => {
                 <div className="w-full h-full flex flex-col justify-end items-start pb-[70px]">
                     <h1 className="text-[64px] 2xl:text-[98px] leading-[1.1] font-[600] mb-[40px] text-white">Bringing Evidence <br /> and Research <br /> to Light</h1>
 
-                    <Button text='The application - Scientific Conference' className='bg-orange-500 text-white' onClick={handleApply} />
+                    <Button text='Submit Abstract' className='bg-orange-500 text-white' onClick={handleApply} />
                 </div>
 
 
@@ -91,7 +91,7 @@ export const ScientificSessionHero = () => {
                     <div className="w-full p-[20px_5px]">
                         <h1 className="text-[34px] leading-[1.1] font-[600] mb-[20px] text-white">Bringing Evidence and Research to Light</h1>
 
-                        <Button text='The application - Scientific Conference' className='bg-orange-500 text-white w-full' onClick={handleApply} />
+                        <Button text='Submit Abstract' className='bg-orange-500 text-white w-full' onClick={handleApply} />
                     </div>
                 </div>
 
